@@ -1,6 +1,87 @@
-h1{
-color: #fa0101;  
-font-family: 'Arial', sans-serif;
-font-size: 20px;
-
+html {
+      font-family:Helvetica;
+      background-color: #ddd;
+      color: #333;
+}
+.p{    background-color:#ddd ;
+      font-size: 30px;
+      font-family: Helvetica;
+}
+.container {
+      max-width: 950px;
+      background-color: #fff;
+      position: relative;
+      margin:30px auto;
+      padding:20px 50px;
+}
+.bold {
+      font-weight: bold;
+}
+.header {
+      text-align: center;    
+}
+.main-paragrafo {
+     font-style: italic;
+}
+.imagem-albuns img{
+    max-width: 100%; 
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+}
+.imagem-albuns figcaption {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.imagem-banda1 img{
+    max-width: 100%; 
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+}
+.imagem-primeiroshow img{
+    max-width: 100%; 
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+}
+.biografia {
+      text-align: center;
+      margin-top:10px;
+      padding: 20px;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+}
+.figure{
+      margin-top: 30px;
+      text-align: center;
+}
+.membros{
+      text-align:justify;
+      margin-top: 20px;
+      padding: 15px;
+}
+.curiosidadeconteiners{
+      text-align:justify;
+      margin-top: 25px 0;
+      padding: 25px 0;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+}
+.citacao2-containers,
+.citacao1-containers{
+      text-align: left;
+      padding: 25px 0;
+      background-color:#ddd ;
+     margin-bottom: 30px;
+     border-top: 1px solid #ddd;
+     border-bottom: 1px solid #ddd;
+}
+.maisinfo-containers{
+      text-align:center;
+      margin-top: 25px 0;
+      padding: 25px 0;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
 }
