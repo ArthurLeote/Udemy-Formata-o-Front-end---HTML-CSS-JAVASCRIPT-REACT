@@ -1,32 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORMULÁRIOS</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-     <form>
-    <h2>Formulários HTML</h2>
-    <!-- 1- Primeiro Formulário -->
-     <!--2- Atributos do Formulário-->
+    <form>
+        <h2>Formulários HTML</h2>
+        <!-- 1- Primeiro Formulário -->
+        <!--2- Atributos do Formulário-->
         <form action="register.php" method="GET">
 
-        <div class="form-group">    
-        <label>Nome:</label>
-        <input type="text" />
-        </div>
+            <div class="form-group">
+                <label>Nome:</label>
+                <input type="text" />
+            </div>
 
-        <!--3- Atributo Name (utilizado para configurar os iputs)-->
-        <div>
-              <!--4- Atributo Label-->
-            <label for="age">Idade:</label>
-            <input type="text" name="age" id="age"/>
-        </div>
-        <!--5- Envio de Formulário-->
-        <button type="submit">Enviar</button>
-    
-    </form>
+            <!--3- Atributo Name (utilizado para configurar os iputs)-->
+            <div>
+                <!--4- Atributo Label-->
+                <label for="age">Idade:</label>
+                <input type="text" name="age" id="age" />
+            </div>
+
+            <!--6- Select-->
+            <div>
+                <label for="job">Selecione uma área:</label>
+                <select name="job">
+                    <option value="desenvolvedor">Programador</option>
+                    <option value="designer">Tester /QA </option>
+                    <option value="gerente">DevOps</option>
+                    <option value="techlead">Tech Lead</option>
+                </select>
+            </div>
+          
+            <!--8- Multiplas Opções-->
+            <div>
+                <label for="skills">Selecione suas habilidades:</label>
+                <select name="skills" multiple>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="php">PHP</option>
+                </select>
+            </div>  
+  <!--7- Atributo Selected-->
+            <div>
+                <label for="contract">Eu li e aceito os termos:</label>
+                <select name="contract">
+                    <option value="sim" >Sim</option>
+                    <option value="nao" selected>Não</option>
+                </select>
+            </div>
+
+            <!--9- Textarea-->
+            <div>
+                <label for="message">Mensagem:</label>
+                <textarea name="message" id="message"></textarea>
+            </div>
+
+            <!--10- Fieldset e Legend-->
+            <div>
+            <fieldset>
+              <legend>Informações Pessoais</legend>
+              <label for="name">Nome:</label>
+              <input type="text" name="name"/>
+              <label for="lastname">Sobrenome:</label>
+              <input type="text" name="lastname"/>
+              <label for="email">Email:</label>
+              <input type="email" name="email"/>
+            </fieldset>
+            </div>
+            
+
+            <!--11- DATALIST-->
+            <div>
+                <label for="browser">Escolha seu navegador:</label>
+                <input list="browsers" name="browser" id="browser">
+                <datalist id="browsers">
+                    <option value="Google Chrome">
+                    <option value="Mozilla Firefox">
+                    <option value="Microsoft Edge">
+                    <option value="Safari">
+                    <option value="Opera">
+                    <option value="Brave"> 
+                    </option>
+                </datalist>
+
+                <!--12- Input Para senhas-->
+
+                <div>
+                    <label for="password">Digite sua senha:</label>
+                    <input type="password" name="password"/>
+                </div>
+
+
+            <!--13 Resetar o Formulário-->
+
+            <div>
+                <button type="reset">Resetar</button>
+            </div>
+
+
+            <!--5- Envio de Formulário-->
+            <button type="submit">Enviar</button>
+
+        </form>
 </body>
 </html>
